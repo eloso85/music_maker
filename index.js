@@ -1,13 +1,13 @@
 window.addEventListener('load',() => {
     const sounds = document.querySelectorAll('.sound');
-    const pads = document.querySelectorAll('pads div');
+    const pads = document.querySelectorAll('.pads div');
 
+    console.log(sounds)
     //make sound
-    pads.forEach(pad =>{
+    pads.forEach((pad, index) => {
         pad.addEventListener('click', function(){
-           sounds[4] 
+           sounds[index].play();
         });
     });
 });
 
-console.log(sounds);
