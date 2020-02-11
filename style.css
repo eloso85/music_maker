@@ -39,25 +39,48 @@ header p{
 }
 
 .pad1{
-    background: green;
+    background: #60d394;
 }
 
 .pad2{
-    background: blue;
+    background:#d36060;
 }
 
 .pad3{
-    background: red;
+    background: #c060d3;
 }
 
 .pad4{
-    background: yellow;
+    background: #d3d160;
 }
 
 .pad5{
-    background: purple;
+    background: #6860d3;
 }
 
 .pad6{
-    background: brown;
+    background: #60b2d3;
+}
+
+@keyframes jump{
+    0%{
+        bottom:0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
 }
